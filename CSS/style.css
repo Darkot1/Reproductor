@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    margin: 0;
+    
+}
+.navbar-text{
+    font-size: 4em;
+    color:#bf26ff;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column; 
+}
+
+.navbar{
+    height: 9vh;
+}
+
+.nav-link{
+    color: #bf26ff;
+}
+.contenedor_tarjetas{
+    background-image: url(/images/pioneer-698515_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 85vh;
+    width: 100%;
+    background: rgb(139,192,255);
+    background: linear-gradient(142deg, rgba(139,192,255,0.4) 8%, rgba(214,175,255,0.4) 30%, rgba(113,70,255,0.4) 65%, rgba(191,38,255,0.4) 91%);
+    backdrop-filter: blur(1px);
+}
+
+.tarjeta{
+    width: 20%;
+    height: 60%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 30px 8px #000f ;
+    position: relative;
+
+}
+
+
+
+
+
+.tarjeta div{
+    width: 100%;
+    height: 90%;
+    position: relative;
+    overflow: hidden;
+}
+
+.tarjeta::before{
+    content: "";
+    width: 120%;
+    height: 130%;
+    background-color: rgba(212, 0, 255, 0.079);
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    border-radius: 30px;
+    box-shadow: 0 25px 45px rgba(255, 255, 255, 0.2);
+    border-left: 2px solid rgba(255,255,255, .2);
+    border-right: 2px solid rgba(255,255,255, .2);
+    border-bottom: 2px solid rgba(255,255,255, .2);
+    backdrop-filter: blur(4px);
+}
+
+.tarjeta div svg{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: #77248F;
+    height: 15%;
+    width: 15%;
+    border-radius: 20%;
+    box-shadow: 0px 0px 10px 5px #0007;
+}
+
+.tarjeta div svg:hover{
+    transform: scale(1.1);
+    
+}
+
+.tarjeta img{
+   width: 100%;
+   height: 100%;
+   transition: 1.2s;
+}
+
+.tarjeta img:hover{
+    transform: scale(1.2);
+}
+
+
+.tarjeta p{
+    margin: 0;
+    height: 10%;
+    color: #fff;
+    background-color: #ccc;
+    width: 100%;
+    text-align: center;
+    padding: 7px;
+}
+
+.reproductor{
+    height: 6vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+
+.box{
+    width: 90%;
+    height: 40%;
+    background-color: #fff;
+    padding: 2px;
+    border: solid 2px #000;
+    border-radius: 20px;
+}
+
+.barra{
+    padding: 8px;
+    background-color: #77248F;
+    border-radius: 18px;
+    width: 0%;
+    transition: 2s linear;
+}
+
+.barra:active{
+    width: 100%;
+}
