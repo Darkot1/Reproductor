@@ -27,7 +27,7 @@ h1{
 .logo{
     height: 91vh;
     width: 100%;
-    background-image: url(/images/sound-4675091_1280.jpg);
+    background-image: url(../images/sound-4675091_1280.jpg);
     background-size: cover;
     background-position: center;
     background-attachment:fixed;

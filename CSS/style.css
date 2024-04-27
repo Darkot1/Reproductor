@@ -25,7 +25,7 @@ h1{
     color: #bf26ff;
 }
 .contenedor_tarjetas{
-    background-image: url(/images/pioneer-698515_1280.jpg);
+    background-image: url(../images/pioneer-698515_1280.jpg);
     background-size: cover;
     background-position: center;
     height: 85vh;
